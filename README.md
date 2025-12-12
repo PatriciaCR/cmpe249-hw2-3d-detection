@@ -1,7 +1,7 @@
 # 3D Object Detection Benchmarking  
 ## PointPillars & SECOND on KITTI + nuScenes-mini  
 
-**Patricia Cáceres — CMPE 276 — Fall 2025**
+**Patricia Cáceres — CMPE 249 — Fall 2025**
 
 [![Python](https://img.shields.io/badge/python-3.8-blue.svg)]()
 [![PyTorch](https://img.shields.io/badge/pytorch-1.13.1%2Bcu117-red.svg)]()
