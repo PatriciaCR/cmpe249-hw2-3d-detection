@@ -1,6 +1,6 @@
 # 3D Object Detection Benchmarking (PointPillars & SECOND)
 
-**Patricia Cáceres - CMPE 276 - Fall 2025**
+**Patricia Cáceres - CMPE 249 - Fall 2025**
 
 ## 1. Goal & Scope
 This project evaluates **3D object detection** performance using **two models** (PointPillars and SECOND) across **two datasets** (KITTI and nuScenes-mini). The objectives are to (i) run inference and save all artifacts (frames, point clouds, metadata), (ii) visualize detections locally with Open3D, and (iii) compare models using quantitative metrics and qualitative results.
@@ -67,12 +67,6 @@ Frame-level metrics (IoU, precision, recall, FPS) were aggregated to dataset-lev
 **Table 1 - Average Performance (Accuracy + Runtime Metrics)**
 
 | Model | Dataset | Avg IoU | Precision | Recall | FPS |
-||---:|---:|---:|
-
-
-> *Note:* nuScenes-mini does not provide compatible 3D ground-truth boxes for quantitative accuracy evaluation in this setup; therefore, **IoU/precision/recall are not meaningful**, while **FPS remains a valid comparative metric across datasets**.
-
-| Model | Dataset | Avg IoU | Precision | Recall | FPS |
 |------|---------|--------:|----------:|-------:|----:|
 | PointPillars | KITTI | 0.516 | 0.419 | 0.672 | 6.79 |
 | SECOND | KITTI | 0.209 | 0.027 | 0.042 | 6.21 |
@@ -87,7 +81,21 @@ Frame-level metrics (IoU, precision, recall, FPS) were aggregated to dataset-lev
 - **KITTI (SECOND):** frequent misalignment and false positives with the used pretrained checkpoint.
 - **nuScenes-mini:** higher FPS due to lower point density; qualitative overlays included.
 
-*(Insert ≥4 labeled screenshots from `results/` here.)*
+**KITTI Second**
+<img width="1242" height="375" alt="007415_2d_vis" src="https://github.com/user-attachments/assets/b0fe3098-93f0-43eb-a8d2-09958d022fb3" />
+<img width="1242" height="375" alt="007407_2d_vis" src="https://github.com/user-attachments/assets/ce97f5d5-0440-4530-b3fc-326163ee8a33" />
+
+**KITTI PointPillars**
+<img width="1242" height="375" alt="000022_2d_vis" src="https://github.com/user-attachments/assets/7bd81d48-8bde-4481-a6a0-9636333fcda4" />
+<img width="1242" height="375" alt="000025_2d_vis" src="https://github.com/user-attachments/assets/4639d136-4c20-4ee8-83d7-2670ac4c0a9a" />
+
+**Nuscenes Second**
+<img width="1440" height="900" alt="n008-2018-08-27-11-48-51-0400__LIDAR_TOP__1535385093650312 pcd" src="https://github.com/user-attachments/assets/590495a6-c80e-40f1-860f-661f75e90b9e" />
+<img width="1440" height="900" alt="n008-2018-08-27-11-48-51-0400__LIDAR_TOP__1535385099899436 pcd" src="https://github.com/user-attachments/assets/237528bb-3086-4068-a0dc-090eae8cd922" />
+
+**Nuscenes PointPillars**
+<img width="1440" height="900" alt="n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151614450164 pcd" src="https://github.com/user-attachments/assets/83b3b246-a6ce-4a26-8c6f-22086e71778b" />
+<img width="1440" height="900" alt="n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151617397050 pcd" src="https://github.com/user-attachments/assets/a7c780c7-36cd-466b-9a2e-d05dbec72b66" />
 
 ---
 ## 7. Comparison & Takeaways
