@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Conda / virtual env
+.env
+.venv
+conda/
+miniconda/
+
+# OS
+.DS_Store
+
+# Large generated results (keep only selected demos if needed)
+results_kitti/
+results_nuscenes/
+*.ply
+*.bin
+
+# Videos (optional – keep if required)
+# *.mp4
+
+# Logs
+*.log
