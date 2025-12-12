@@ -1,6 +1,6 @@
-````markdown
 # 3D Object Detection Benchmarking  
 ## PointPillars & SECOND on KITTI + nuScenes-mini  
+
 **Patricia Cáceres — CMPE 276 — Fall 2025**
 
 [![Python](https://img.shields.io/badge/python-3.8-blue.svg)]()
@@ -12,12 +12,14 @@
 
 ## 📌 Overview
 
-This repository benchmarks **PointPillars** and **SECOND** on the **KITTI** and **nuScenes-mini** datasets using an extended MMDetection3D inference pipeline. The system supports:
+This repository benchmarks **PointPillars** and **SECOND** on the **KITTI** and **nuScenes-mini** datasets using an extended MMDetection3D inference pipeline.
+
+Supported features include:
 
 - Height-colored LiDAR visualization  
-- 3D Open3D rendering (headless or GUI)  
-- KITTI 3D→2D projection overlays  
-- IoU, precision, recall, FPS computation  
+- 3D Open3D rendering (GUI or headless)  
+- KITTI 3D → 2D projection overlays  
+- IoU, precision, recall, and FPS computation  
 - Automatic `.mp4` video demo generation  
 - Unified inference across KITTI and nuScenes-mini LiDAR datasets  
 
@@ -25,12 +27,13 @@ All experiments were executed on a Google Cloud VM with an NVIDIA L4 GPU and ful
 
 ---
 
-# 🚀 1. Compute Environment
+## 🚀 1. Compute Environment
 
-### **Google Cloud VM**
+### Google Cloud VM
+
 | Component | Specification |
 |----------|--------------|
-| Machine Type | g2-standard-8 (8 vCPU, 32GB RAM) |
+| Machine Type | g2-standard-8 (8 vCPU, 32 GB RAM) |
 | GPU | NVIDIA L4 (Compute Capability 8.9) |
 | OS | Ubuntu 22.04 LTS |
 | Python | 3.8.20 |
@@ -41,13 +44,13 @@ All experiments were executed on a Google Cloud VM with an NVIDIA L4 GPU and ful
 
 ---
 
-# 🎯 2. Installation (Reproducible)
+## 🎯 2. Installation (Reproducible)
 
 ### Create Conda Environment
+
 ```bash
 conda create -n mmdet3d-py38 python=3.8
 conda activate mmdet3d-py38
-````
 
 ### Install PyTorch (CUDA 11.7)
 
