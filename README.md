@@ -51,9 +51,8 @@ All experiments were executed on a Google Cloud VM with an NVIDIA L4 GPU and ful
 ```bash
 conda create -n mmdet3d-py38 python=3.8
 conda activate mmdet3d-py38
-
+```
 ### Install PyTorch (CUDA 11.7)
-
 ```bash
 pip install torch==1.13.1+cu117 torchvision torchaudio \
     --extra-index-url https://download.pytorch.org/whl/cu117
